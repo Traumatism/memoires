@@ -19,7 +19,8 @@ fn fib(n: usize) -> usize {
 
 
 fn main() {
-    for i in 1..40 {
+    // long as f*ck
+    for i in 1..60 {
         println!("{}", fib(i))
     }
 }
@@ -52,7 +53,7 @@ fn fib<I, O>(n: usize, m: &mut Memoire<usize, usize>) -> usize {
 fn main() {
     let mut fib_mem = Memoire::new(fib::<isize, isize>);
 
-    for i in 1..40 {
+    for i in 1..60 {
         println!("{}", fib_mem.run(i))
     }
 }
