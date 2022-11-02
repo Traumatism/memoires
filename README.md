@@ -35,7 +35,9 @@ use memoires::Memoire;
 //
 // If you have a f(String) -> String, you gonna write Memoire<String, String>.
 //
-// IMPORTANT: the types must implement the Clone, Eq and Hash traits !
+// IMPORTANT: 
+//  - the input type must implement the Clone, Eq and Hash traits
+//  - the output type must implement the Clone trait
 //
 fn fib<I, O>(n: usize, m: &mut Memoire<usize, usize>) -> usize {
     if n == 0 {
